@@ -1,0 +1,143 @@
+/* version modified by mario */
+/* line 19, master.scss */
+body {
+  background: url(images/background_bg.gif) top center repeat-x;
+  background-color: #000;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-family: helvetica, verdana, airal, sans-serif;
+}
+
+/* line 28, master.scss */
+body a {
+  color: #fff;
+}
+
+/* line 32, master.scss */
+body > div {
+  margin: 0px auto 0px auto;
+  width: 996px;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 40, master.scss */
+#header_hero {
+  background: url(images/header.jpg) top left no-repeat;
+  width: 996px;
+  height: 382px;
+  display: block;
+}
+
+/* line 47, master.scss */
+#header_hero:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 51, master.scss */
+#header_navigation {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 2px solid #ffff99;
+}
+/* line 55, master.scss */
+#header_navigation a {
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 61, master.scss */
+#header_navigation a:hover {
+  text-decoration: underline;
+}
+
+/* line 66, master.scss */
+.footer_navigation {
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+}
+/* line 70, master.scss */
+.footer_navigation a {
+  text-decoration: none;
+}
+/* line 73, master.scss */
+.footer_navigation a:hover {
+  text-decoration: underline;
+}
+
+/* line 78, master.scss */
+.copyright {
+  min-height: 30px;
+  font-size: 12px;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+/* line 87, master.scss */
+#content_body {
+  position: relative;
+  top: 0px;
+  border: 1px solid #000;
+  width: 976px;
+  margin: 0px auto 0px auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0px;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 99, master.scss */
+#content_body .left_sidebar_content {
+  display: block;
+  width: 250px;
+  float: left;
+}
+/* line 105, master.scss */
+#content_body .right_sidebar_content {
+  display: block;
+  width: 250px;
+  float: right;
+}
+/* line 111, master.scss */
+#content_body .main_content {
+  display: block;
+  float: left;
+  width: 721px;
+}
+/* line 116, master.scss */
+#content_body .right_content {
+  display: block;
+  width: 250px;
+  float: right;
+}
+/* line 122, master.scss */
+#content_body .ccm-core-commerce-add-to-cart-callout {
+  color: #000;
+  text-align: left;
+}
+/* line 125, master.scss */
+#content_body .ccm-core-commerce-add-to-cart-callout td {
+  text-align: left;
+}
+
+/* line 132, master.scss */
+.clear, .clearfix {
+  display: block;
+  clear: both;
+}
+
+/* line 137, master.scss */
+.godaddy_seal {
+  width: 132px;
+  height: 31px;
+  display: block;
+  background: url(images/seal.gif) bottom left no-repeat;
+  margin: 0px auto 0px auto;
+  padding-top: 20px;
+}

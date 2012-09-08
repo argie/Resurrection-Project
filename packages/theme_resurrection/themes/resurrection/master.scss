@@ -1,0 +1,145 @@
+/* version modified by mario */
+
+@mixin round_corners($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin after_clear {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+$width: 996px;
+
+body {
+  background: url(images/background_bg.gif) top center repeat-x;
+  background-color: #000;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-family: helvetica, verdana, airal, sans-serif;
+}
+
+body a {
+  color: #fff;
+}
+
+body > div {
+  margin: 0px auto 0px auto;
+  width: $width;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+
+
+#header_hero {
+  background: url(images/header.jpg) top left no-repeat;
+  width: 996px;
+  height: 382px;
+  display: block;
+}
+
+#header_hero:after {
+  @include after_clear;
+}
+
+#header_navigation {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 2px solid #ffff99;
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer_navigation {
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.copyright {
+  min-height: 30px;
+  font-size: 12px;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+
+
+#content_body {
+  position: relative;
+  top: 0px;
+  border: 1px solid #000;
+  width: $width - 20px;
+  margin: 0px auto 0px auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0px;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .left_sidebar_content {
+    display: block;
+    width: 250px;
+    float: left;
+  }
+  
+  .right_sidebar_content {
+    display: block;
+    width: 250px;
+    float: right;
+  }
+  
+  .main_content {
+    display: block;
+    float: left;
+    width: ($width - 20px) - 255px;
+  }
+  .right_content {
+    display: block;
+    width: 250px;
+    float: right;
+  }
+  
+  .ccm-core-commerce-add-to-cart-callout {
+    color: #000;
+    text-align: left;
+    td {
+      text-align: left;
+    }
+  }
+}
+
+
+.clear, .clearfix {
+  display: block;
+  clear: both;
+}
+
+.godaddy_seal {
+  width: 132px;
+  height: 31px;
+  display: block;
+  background: url(images/seal.gif) bottom left no-repeat;
+  margin: 0px auto 0px auto;
+  padding-top: 20px;
+}
+
