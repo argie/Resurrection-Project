@@ -1,2 +1,5 @@
 config/site.php
 files/cache/*
+imageWork/*
+storage/*
+uploads/*
