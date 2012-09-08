@@ -1,101 +1,254 @@
-/* version modified by mario v2.14 */
+/* version modified by mario v2.15 */
+/* line 22, master.scss */
+html, body {
+  background-color: #000;
+}
+
+/* line 28, master.scss */
 body {
   background: url(images/background_bg.gif) top center repeat-x;
+  background-attachment: fixed;
   background-color: #000;
   color: #fff;
   margin: 0px;
   padding: 0px;
-  font-family: helvetica, verdana, airal, sans-serif; }
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-size: 16px;
+  /* pixels are used for IE. all other measures use rem sizing */
+  font-size: 1rem;
+}
 
-body a {
-  color: #fff; }
+/* line 45, master.scss */
+#header a:link, #header a:visited, #content_body a:link, #content_body a:visited, #footer a:link, #footer a:visited {
+  color: #fff;
+}
+/* line 51, master.scss */
+#header a:hover, #header a:active, #header a:focus, #content_body a:hover, #content_body a:active, #content_body a:focus, #footer a:hover, #footer a:active, #footer a:focus {
+  color: #fcfa96;
+}
 
+/* line 61, master.scss */
 body > div {
   margin: 0px auto 0px auto;
   width: 996px;
-  background-color: rgba(0, 0, 0, 0.85); }
+  background-color: rgba(0, 0, 0, 0.85);
+}
 
+/* line 67, master.scss */
 #header_hero {
   background: url(images/header.jpg) top left no-repeat;
   width: 996px;
   height: 382px;
-  display: block; }
+  display: block;
+}
 
+/* line 74, master.scss */
 #header_hero:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
+/* line 78, master.scss */
 #header_navigation {
   padding: 5px;
   text-align: center;
-  border-bottom: 2px solid #ffff99; }
-  #header_navigation a {
-    font-size: 16px;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px; }
-  #header_navigation a:hover {
-    text-decoration: underline; }
+  border-bottom: 2px solid #ffff99;
+  padding-bottom: 10px;
+  background: #000;
+}
+/* line 84, master.scss */
+#header_navigation a {
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 92, master.scss */
+#header_navigation a:hover {
+  text-decoration: none;
+}
 
-.footer_navigation {
-  padding: 5px;
-  padding-top: 20px;
-  text-align: center; }
-  .footer_navigation a {
-    text-decoration: none; }
-  .footer_navigation a:hover {
-    text-decoration: underline; }
+/* line 100, master.scss */
+.pagetype_left_sidebar #content_body h1, .pagetype_full #content_body h1 {
+  position: relative;
+  left: -40px;
+  padding: 10px 0px 10px 70px;
+}
 
-.copyright {
-  min-height: 30px;
-  font-size: 12px;
-  padding: 20px;
-  padding-left: 30px; }
-
+/* line 106, master.scss */
 #content_body {
   position: relative;
   top: 0px;
   border: 1px solid #000;
   width: 976px;
   margin: 0px auto 0px auto;
-  background-color: rgba(0, 0, 0, 0.85);
   padding: 0px;
   display: block;
   padding-left: 10px;
-  padding-right: 10px; }
-  #content_body .left_sidebar_content {
-    display: block;
-    width: 250px;
-    float: left; }
-  #content_body .right_sidebar_content {
-    display: block;
-    width: 250px;
-    float: right; }
-  #content_body .main_content {
-    display: block;
-    float: left;
-    width: 721px; }
-  #content_body .right_content {
-    display: block;
-    width: 250px;
-    float: right; }
-  #content_body .ccm-core-commerce-add-to-cart-callout {
-    color: #000;
-    text-align: left; }
-    #content_body .ccm-core-commerce-add-to-cart-callout td {
-      text-align: left; }
-
-.clear, .clearfix {
+  padding-right: 10px;
+}
+/* line 118, master.scss */
+#content_body h1, #content_body h2, #content_body h3, #content_body h4, #content_body h5, #content_body h6 {
+  text-align: left !important;
+  /* temp fix to override inline styles */
+  color: #FFF;
+  padding: 10px 0px 10px 10px;
+  text-transform: uppercase;
+}
+/* line 126, master.scss */
+#content_body h1 {
+  font-size: 20px;
+  font-size: 1.5rem;
+  color: #000;
+  /* unique link reference - http://www.colorzilla.com/gradient-editor/#fcfa96+0,fcfa96+85,ffffff+100&1+60,0+100;Custom */
+  background: #fcfa96;
+  background: -moz-linear-gradient(left, #fcfa96 0%, #fcfa96 60%, rgba(252, 250, 150, 0.38) 85%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fcfa96), color-stop(60%, #fcfa96), color-stop(85%, rgba(252, 250, 150, 0.38)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #fcfa96 0%, #fcfa96 60%, rgba(252, 250, 150, 0.38) 85%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #fcfa96 0%, #fcfa96 60%, rgba(252, 250, 150, 0.38) 85%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #fcfa96 0%, #fcfa96 60%, rgba(252, 250, 150, 0.38) 85%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #fcfa96 0%, #fcfa96 60%, rgba(252, 250, 150, 0.38) 85%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfa96', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-8 */
+}
+/* line 146, master.scss */
+#content_body h2 {
+  font-size: 16px;
+  font-size: 1.3rem;
+}
+/* line 150, master.scss */
+#content_body h3 {
+  font-size: 14px;
+  font-size: 1.1rem;
+}
+/* line 154, master.scss */
+#content_body h4 {
+  font-size: 12px;
+  font-size: 1rem;
+}
+/* line 158, master.scss */
+#content_body h5 {
+  font-size: 10px;
+  font-size: .9rem;
+}
+/* line 162, master.scss */
+#content_body h6 {
+  font-size: 10px;
+  font-size: .9rem;
+}
+/* line 166, master.scss */
+#content_body p {
+  margin: 0 0 1em;
+  font-size: 1rem;
+}
+/* line 171, master.scss */
+#content_body .left_sidebar_content {
   display: block;
-  clear: both; }
+  width: 230px;
+  float: left;
+}
+/* line 177, master.scss */
+#content_body .right_sidebar_content {
+  display: block;
+  width: 230px;
+  float: right;
+}
+/* line 183, master.scss */
+#content_body .main_content {
+  display: block;
+  float: left;
+  width: 721px;
+  padding: 0px 10px;
+}
+/* line 189, master.scss */
+#content_body .right_content {
+  display: block;
+  width: 230px;
+  float: right;
+}
+/* line 195, master.scss */
+#content_body .ccm-core-commerce-add-to-cart-callout {
+  color: #000;
+  text-align: left;
+}
+/* line 198, master.scss */
+#content_body .ccm-core-commerce-add-to-cart-callout td {
+  text-align: left;
+}
+/* line 205, master.scss */
+#content_body .formBlockSurveyTable label {
+  vertical-align: top;
+}
+/* line 209, master.scss */
+#content_body .formBlockSurveyTable label, #content_body .formBlockSurveyTable .radioPair {
+  font-size: 1.3rem;
+  padding-top: 10px;
+}
+/* line 214, master.scss */
+#content_body .formBlockSurveyTable input, #content_body .formBlockSurveyTable textarea {
+  margin: 10px 0px;
+}
+/* line 222, master.scss */
+#content_body form .question, #content_body form .checkboxList {
+  vertical-align: top;
+  margin: 10px 0px;
+}
 
-.godaddy_seal {
+/* line 233, master.scss */
+#footer .footer_navigation {
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+}
+/* line 237, master.scss */
+#footer .footer_navigation a {
+  text-decoration: none;
+}
+/* line 240, master.scss */
+#footer .footer_navigation a:hover {
+  text-decoration: underline;
+}
+
+/* line 248, master.scss */
+#footer .copyright {
+  min-height: 30px;
+  font-size: 12px;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+/* line 255, master.scss */
+#footer .godaddy_seal {
   width: 132px;
   height: 31px;
   display: block;
   background: url(images/seal.gif) bottom left no-repeat;
   margin: 0px auto 0px auto;
-  padding-top: 20px; }
+  padding-top: 20px;
+}
+
+/* line 265, master.scss */
+.clear, .clearfix {
+  display: block;
+  clear: both;
+}
+
+/* line 271, master.scss */
+.nav li {
+  list-style: none !important;
+}
+/* line 274, master.scss */
+.nav li a {
+  text-decoration: none;
+}

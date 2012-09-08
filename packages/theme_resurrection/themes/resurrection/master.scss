@@ -1,4 +1,7 @@
-/* version modified by mario v2.14 */
+/* version modified by mario v2.15 */
+
+//imports
+
 
 @mixin round_corners($radius) {
   -moz-border-radius: $radius;
@@ -16,26 +19,50 @@
 
 $width: 996px;
 
+html, body {
+
+background-color: #000;
+
+}
+
 body {
   background: url(images/background_bg.gif) top center repeat-x;
+  background-attachment: fixed;
   background-color: #000;
   color: #fff;
   margin: 0px;
   padding: 0px;
-  font-family: helvetica, verdana, airal, sans-serif;
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-size: 16px; /* pixels are used for IE. all other measures use rem sizing */
+  font-size: 1rem;
 }
 
-body a {
-  color: #fff;
+
+#header, #content_body, #footer {
+
+    a {
+
+      &:link, &:visited {
+
+      color: #fff;
+
+      }
+
+       &:hover, &:active, &:focus {
+
+      color:#fcfa96;
+
+      } 
+
+    }
 }
+
 
 body > div {
   margin: 0px auto 0px auto;
   width: $width;
   background-color: rgba(0, 0, 0, 0.85);
 }
-
-
 
 #header_hero {
   background: url(images/header.jpg) top left no-repeat;
@@ -52,59 +79,104 @@ body > div {
   padding: 5px;
   text-align: center;
   border-bottom: 2px solid #ffff99;
+  padding-bottom: 10px;
+  background: #000;
   a {
     font-size: 16px;
+    font-size: 1rem;
+    text-transform: uppercase;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-}
+    margin-left: 20px;
+    margin-right: 20px;
 
-.footer_navigation {
-  padding: 5px;
-  padding-top: 20px;
-  text-align: center;
-  a {
-    text-decoration: none;
+      &:hover {
+        text-decoration: none;
+    }
   }
-  a:hover {
-    text-decoration: underline;
-  }
-}
 
-.copyright {
-  min-height: 30px;
-  font-size: 12px;
-  padding: 20px;
-  padding-left: 30px;
 }
 
 
+.pagetype_left_sidebar #content_body h1, .pagetype_full #content_body h1 {
+      position: relative;
+      left:-40px;
+      padding:10px 0px 10px 70px;
+}
 
 #content_body {
+
   position: relative;
   top: 0px;
   border: 1px solid #000;
   width: $width - 20px;
   margin: 0px auto 0px auto;
-  background-color: rgba(0, 0, 0, 0.85);
   padding: 0px;
   display: block;
   padding-left: 10px;
   padding-right: 10px;
 
+    h1, h2, h3, h4, h5, h6 {
+
+        text-align: left !important; /* temp fix to override inline styles */
+        color: #FFF;
+        padding:10px 0px 10px 10px;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-size: 1.5rem;
+        color: #000;
+        
+
+        /* unique link reference - http://www.colorzilla.com/gradient-editor/#fcfa96+0,fcfa96+85,ffffff+100&1+60,0+100;Custom */
+
+        background: #fcfa96;
+        background: -moz-linear-gradient(left, rgba(252,250,150,1) 0%, rgba(252,250,150,1) 60%, rgba(252,250,150,0.38) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(252,250,150,1)), color-stop(60%,rgba(252,250,150,1)), color-stop(85%,rgba(252,250,150,0.38)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(252,250,150,1) 0%,rgba(252,250,150,1) 60%,rgba(252,250,150,0.38) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(252,250,150,1) 0%,rgba(252,250,150,1) 60%,rgba(252,250,150,0.38) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(252,250,150,1) 0%,rgba(252,250,150,1) 60%,rgba(252,250,150,0.38) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
+        background: linear-gradient(to right, rgba(252,250,150,1) 0%,rgba(252,250,150,1) 60%,rgba(252,250,150,0.38) 85%,rgba(255,255,255,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfa96', endColorstr='#00ffffff',GradientType=1 ); /* IE6-8 */
+
+
+    }
+
+    h2 {
+        font-size: 16px;
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 14px;
+        font-size: 1.1rem;
+    }
+    h4 {
+        font-size: 12px;
+        font-size: 1rem;
+    }
+    h5 {
+        font-size: 10px;
+        font-size: .9rem;
+    }
+    h6 {
+        font-size: 10px;
+        font-size: .9rem;
+    }
+    p {
+        margin: 0 0 1em;
+        font-size: 1rem;
+    }
+
   .left_sidebar_content {
     display: block;
-    width: 250px;
+    width: 230px;
     float: left;
   }
   
   .right_sidebar_content {
     display: block;
-    width: 250px;
+    width: 230px;
     float: right;
   }
   
@@ -112,10 +184,11 @@ body > div {
     display: block;
     float: left;
     width: ($width - 20px) - 255px;
+    padding:0px 10px;
   }
   .right_content {
     display: block;
-    width: 250px;
+    width: 230px;
     float: right;
   }
   
@@ -126,15 +199,60 @@ body > div {
       text-align: left;
     }
   }
+
+    .formBlockSurveyTable {
+
+        label {
+            vertical-align: top;
+        }
+
+        label, .radioPair {
+          font-size: 1.3rem;
+          padding-top: 10px;
+        }
+
+        input, textarea {
+          margin: 10px 0px;
+        }
+
+    }
+
+    form {
+
+        .question, .checkboxList {
+
+          vertical-align: top;
+          margin: 10px 0px; 
+
+        }
+
+    }
 }
 
 
-.clear, .clearfix {
-  display: block;
-  clear: both;
+#footer .footer_navigation {
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+  a {
+    text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+  }
+
+  }
+
 }
 
-.godaddy_seal {
+#footer .copyright {
+  min-height: 30px;
+  font-size: 12px;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+#footer .godaddy_seal {
   width: 132px;
   height: 31px;
   display: block;
@@ -143,3 +261,18 @@ body > div {
   padding-top: 20px;
 }
 
+
+.clear, .clearfix {
+  display: block;
+  clear: both;
+}
+
+
+.nav li {
+list-style: none !important;
+
+    a {
+    text-decoration: none;
+    }
+
+}
