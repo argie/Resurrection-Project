@@ -1,10 +1,10 @@
-/* version modified by mario v2.15 */
-/* line 22, master.scss */
+/* version modified by mario v2.16 */
+/* line 23, master.scss */
 html, body {
   background-color: #000;
 }
 
-/* line 28, master.scss */
+/* line 29, master.scss */
 body {
   background: url(images/background_bg.gif) top center repeat-x;
   background-attachment: fixed;
@@ -18,23 +18,23 @@ body {
   font-size: 1rem;
 }
 
-/* line 45, master.scss */
+/* line 46, master.scss */
 #header a:link, #header a:visited, #content_body a:link, #content_body a:visited, #footer a:link, #footer a:visited {
   color: #fff;
 }
-/* line 51, master.scss */
+/* line 52, master.scss */
 #header a:hover, #header a:active, #header a:focus, #content_body a:hover, #content_body a:active, #content_body a:focus, #footer a:hover, #footer a:active, #footer a:focus {
   color: #fcfa96;
 }
 
-/* line 61, master.scss */
+/* line 62, master.scss */
 body > div {
   margin: 0px auto 0px auto;
   width: 996px;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* line 67, master.scss */
+/* line 68, master.scss */
 #header_hero {
   background: url(images/header.jpg) top left no-repeat;
   width: 996px;
@@ -42,7 +42,7 @@ body > div {
   display: block;
 }
 
-/* line 74, master.scss */
+/* line 75, master.scss */
 #header_hero:after {
   content: ".";
   display: block;
@@ -51,7 +51,7 @@ body > div {
   visibility: hidden;
 }
 
-/* line 78, master.scss */
+/* line 79, master.scss */
 #header_navigation {
   padding: 5px;
   text-align: center;
@@ -59,7 +59,7 @@ body > div {
   padding-bottom: 10px;
   background: #000;
 }
-/* line 84, master.scss */
+/* line 85, master.scss */
 #header_navigation a {
   font-size: 16px;
   font-size: 1rem;
@@ -68,31 +68,30 @@ body > div {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 92, master.scss */
+/* line 93, master.scss */
 #header_navigation a:hover {
   text-decoration: none;
 }
 
-/* line 100, master.scss */
+/* line 101, master.scss */
 .pagetype_left_sidebar #content_body h1, .pagetype_full #content_body h1 {
   position: relative;
   left: -40px;
   padding: 10px 0px 10px 70px;
 }
 
-/* line 106, master.scss */
+/* line 107, master.scss */
 #content_body {
   position: relative;
   top: 0px;
   border: 1px solid #000;
   width: 976px;
   margin: 0px auto 0px auto;
-  padding: 0px;
+  padding: 30px 10px;
   display: block;
-  padding-left: 10px;
-  padding-right: 10px;
+  min-height: 800px;
 }
-/* line 118, master.scss */
+/* line 119, master.scss */
 #content_body h1, #content_body h2, #content_body h3, #content_body h4, #content_body h5, #content_body h6 {
   text-align: left !important;
   /* temp fix to override inline styles */
@@ -100,7 +99,7 @@ body > div {
   padding: 10px 0px 10px 10px;
   text-transform: uppercase;
 }
-/* line 126, master.scss */
+/* line 127, master.scss */
 #content_body h1 {
   font-size: 20px;
   font-size: 1.5rem;
@@ -122,113 +121,129 @@ body > div {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfa96', endColorstr='#00ffffff',GradientType=1 );
   /* IE6-8 */
 }
-/* line 146, master.scss */
+/* line 147, master.scss */
 #content_body h2 {
   font-size: 16px;
   font-size: 1.3rem;
 }
-/* line 150, master.scss */
+/* line 151, master.scss */
 #content_body h3 {
   font-size: 14px;
   font-size: 1.1rem;
 }
-/* line 154, master.scss */
+/* line 155, master.scss */
 #content_body h4 {
   font-size: 12px;
   font-size: 1rem;
 }
-/* line 158, master.scss */
+/* line 159, master.scss */
 #content_body h5 {
   font-size: 10px;
   font-size: .9rem;
 }
-/* line 162, master.scss */
+/* line 163, master.scss */
 #content_body h6 {
   font-size: 10px;
   font-size: .9rem;
 }
-/* line 166, master.scss */
+/* line 167, master.scss */
 #content_body p {
   margin: 0 0 1em;
   font-size: 1rem;
 }
-/* line 171, master.scss */
+/* line 172, master.scss */
 #content_body .left_sidebar_content {
   display: block;
   width: 230px;
   float: left;
 }
-/* line 177, master.scss */
+/* line 178, master.scss */
 #content_body .right_sidebar_content {
   display: block;
   width: 230px;
   float: right;
 }
-/* line 183, master.scss */
+/* line 184, master.scss */
 #content_body .main_content {
   display: block;
   float: left;
   width: 721px;
   padding: 0px 10px;
 }
-/* line 189, master.scss */
+/* line 190, master.scss */
 #content_body .right_content {
   display: block;
-  width: 230px;
+  width: 210px;
   float: right;
+  position: relative;
+  right: 10px;
+  background: #000;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 195, master.scss */
+/* line 201, master.scss */
 #content_body .ccm-core-commerce-add-to-cart-callout {
   color: #000;
   text-align: left;
 }
-/* line 198, master.scss */
+/* line 204, master.scss */
 #content_body .ccm-core-commerce-add-to-cart-callout td {
   text-align: left;
 }
-/* line 205, master.scss */
+/* line 211, master.scss */
 #content_body .formBlockSurveyTable label {
   vertical-align: top;
 }
-/* line 209, master.scss */
+/* line 215, master.scss */
 #content_body .formBlockSurveyTable label, #content_body .formBlockSurveyTable .radioPair {
   font-size: 1.3rem;
   padding-top: 10px;
 }
-/* line 214, master.scss */
+/* line 220, master.scss */
 #content_body .formBlockSurveyTable input, #content_body .formBlockSurveyTable textarea {
   margin: 10px 0px;
 }
-/* line 222, master.scss */
+/* line 228, master.scss */
 #content_body form .question, #content_body form .checkboxList {
   vertical-align: top;
   margin: 10px 0px;
 }
 
-/* line 233, master.scss */
+/* line 238, master.scss */
+#footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+/* line 243, master.scss */
 #footer .footer_navigation {
   padding: 5px;
   padding-top: 20px;
   text-align: center;
 }
-/* line 237, master.scss */
+/* line 247, master.scss */
 #footer .footer_navigation a {
   text-decoration: none;
+  font-size: 12px;
+  font-size: .8rem;
+  padding: 0px 7px;
 }
-/* line 240, master.scss */
+/* line 253, master.scss */
 #footer .footer_navigation a:hover {
   text-decoration: underline;
 }
-
-/* line 248, master.scss */
+/* line 261, master.scss */
 #footer .copyright {
   min-height: 30px;
   font-size: 12px;
   padding: 20px;
   padding-left: 30px;
+  font-size: 10px;
+  font-size: .7rem;
+  text-align: center;
 }
-
-/* line 255, master.scss */
+/* line 271, master.scss */
 #footer .godaddy_seal {
   width: 132px;
   height: 31px;
@@ -238,17 +253,17 @@ body > div {
   padding-top: 20px;
 }
 
-/* line 265, master.scss */
+/* line 282, master.scss */
 .clear, .clearfix {
   display: block;
   clear: both;
 }
 
-/* line 271, master.scss */
+/* line 288, master.scss */
 .nav li {
   list-style: none !important;
 }
-/* line 274, master.scss */
+/* line 291, master.scss */
 .nav li a {
   text-decoration: none;
 }
