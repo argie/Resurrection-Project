@@ -130,6 +130,7 @@ body > div {
         color: #FFF;
         padding:10px 0px 10px 0px;
         text-transform: uppercase;
+
     }
 
     h1, .main_content h2 {
@@ -138,12 +139,14 @@ body > div {
         color: #000;
         margin-bottom: 30px;
         position: relative;
-        left: -20px;
+        left: -40px;
         padding: 10px 0px 10px 70px;
 
         @include title_gradient();
 
     }
+
+   
 
     h2 {
         font-size: 16px;
@@ -154,7 +157,7 @@ body > div {
 
       font-size: 16px;
       font-size: 1.3rem;
-
+      left: -40px;
     }
 
     h3 {
