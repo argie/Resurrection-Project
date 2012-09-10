@@ -157,7 +157,6 @@ body > div {
 
       font-size: 16px;
       font-size: 1.3rem;
-      left: -40px;
     }
 
     h3 {
@@ -319,6 +318,6 @@ position:relative;
 left:-40px;
 }
 
-.pagetype_left_sidebar #content_body h1 {
+.pagetype_left_sidebar #content_body h1, .pagetype_left_sidebar #content_body h2 {
   left: 0px;
 }
