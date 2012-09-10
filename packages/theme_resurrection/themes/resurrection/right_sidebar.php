@@ -8,6 +8,10 @@ $this->inc('elements/header.php'); ?>
 	  $a->display($c);
   ?>
   <div class="clear"></div>
+    <?php  
+    $a = new Area('generalSiteInfo');
+    $a->display($c);
+  ?>
 </div>
 
 <div class="main_content">

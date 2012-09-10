@@ -1,4 +1,4 @@
-/* version modified by mario v2.16 */
+/* version modified by mario v2.18 */
 
 //imports
 
@@ -98,20 +98,14 @@ body > div {
 }
 
 
-.pagetype_left_sidebar #content_body h1, .pagetype_full #content_body h1 {
-      position: relative;
-      left:-40px;
-      padding:10px 0px 10px 70px;
-}
-
 #content_body {
 
   position: relative;
   top: 0px;
   border: 1px solid #000;
-  width: $width - 20px;
+  width: $width - 40px;
   margin: 0px auto 0px auto;
-  padding: 30px 10px;
+  padding: 30px 20px;
   display: block;
   min-height:800px;
 
@@ -120,7 +114,7 @@ body > div {
 
         text-align: left !important; /* temp fix to override inline styles */
         color: #FFF;
-        padding:10px 0px 10px 10px;
+        padding:10px 0px 10px 0px;
         text-transform: uppercase;
     }
 
@@ -128,7 +122,10 @@ body > div {
         font-size: 20px;
         font-size: 1.5rem;
         color: #000;
-        
+        margin-bottom: 30px;
+        position: relative;
+        left: -40px;
+        padding: 10px 0px 10px 70px;
 
         /* unique link reference - http://www.colorzilla.com/gradient-editor/#fcfa96+0,fcfa96+85,ffffff+100&1+60,0+100;Custom */
 
@@ -169,30 +166,32 @@ body > div {
         font-size: 1rem;
     }
 
+
+
   .left_sidebar_content {
     display: block;
-    width: 230px;
+    width: 200px;
     float: left;
   }
   
   .right_sidebar_content {
     display: block;
-    width: 230px;
+    width: 200px;
     float: right;
   }
   
   .main_content {
     display: block;
     float: left;
-    width: ($width - 20px) - 255px;
-    padding:0px 10px;
+    width: ($width - 40px) - 240px;
+    padding:0px;
   }
   .right_content {
     display: block;
-    width: 210px;
+    width: 200px;
     float: right;
     position:relative;
-    right: 10px;
+    right: 0px;
     background: #000;
     padding:10px;
     @include round_corners(10px);
@@ -204,6 +203,11 @@ body > div {
     td {
       text-align: left;
     }
+  }
+
+  .ccm-core-commerce-add-to-cart td {
+    padding: 10px;
+    text-align: left;
   }
 
     .formBlockSurveyTable {
@@ -284,6 +288,7 @@ body > div {
   clear: both;
 }
 
+/* specific overrides */
 
 .nav li {
 list-style: none !important;
@@ -292,4 +297,8 @@ list-style: none !important;
     text-decoration: none;
     }
 
+}
+
+.pagetype_left_sidebar #content_body h1 {
+  left: 0px;
 }
