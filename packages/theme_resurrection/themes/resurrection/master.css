@@ -18,23 +18,29 @@ body {
   font-size: 1rem;
 }
 
-/* line 60, master.scss */
+/* line 55, master.scss */
+img {
+  border: 0px;
+  /* ie hack */
+}
+
+/* line 65, master.scss */
 #header a:link, #header a:visited, #content_body a:link, #content_body a:visited, #footer a:link, #footer a:visited {
   color: #fff;
 }
-/* line 66, master.scss */
+/* line 71, master.scss */
 #header a:hover, #header a:active, #header a:focus, #content_body a:hover, #content_body a:active, #content_body a:focus, #footer a:hover, #footer a:active, #footer a:focus {
   color: #fcfa96;
 }
 
-/* line 76, master.scss */
+/* line 81, master.scss */
 body > div {
   margin: 0px auto 0px auto;
   width: 996px;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* line 82, master.scss */
+/* line 87, master.scss */
 #header_hero {
   background: url(images/header.jpg) top left no-repeat;
   width: 996px;
@@ -42,7 +48,7 @@ body > div {
   display: block;
 }
 
-/* line 89, master.scss */
+/* line 94, master.scss */
 #header_hero:after {
   content: ".";
   display: block;
@@ -51,7 +57,7 @@ body > div {
   visibility: hidden;
 }
 
-/* line 93, master.scss */
+/* line 98, master.scss */
 #header_navigation {
   padding: 5px;
   text-align: center;
@@ -59,7 +65,7 @@ body > div {
   padding-bottom: 10px;
   background: #000;
 }
-/* line 99, master.scss */
+/* line 104, master.scss */
 #header_navigation a {
   font-size: 16px;
   font-size: 1rem;
@@ -68,12 +74,12 @@ body > div {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 107, master.scss */
+/* line 112, master.scss */
 #header_navigation a:hover {
   text-decoration: none;
 }
 
-/* line 115, master.scss */
+/* line 120, master.scss */
 #content_body {
   position: relative;
   top: 0px;
@@ -84,7 +90,7 @@ body > div {
   display: block;
   min-height: 800px;
 }
-/* line 127, master.scss */
+/* line 132, master.scss */
 #content_body h1, #content_body h2, #content_body h3, #content_body h4, #content_body h5, #content_body h6 {
   text-align: left !important;
   /* temp fix to override inline styles */
@@ -92,7 +98,7 @@ body > div {
   padding: 10px 0px 10px 0px;
   text-transform: uppercase;
 }
-/* line 136, master.scss */
+/* line 141, master.scss */
 #content_body h1, #content_body .main_content h2 {
   font-size: 20px;
   font-size: 1.5rem;
@@ -118,61 +124,61 @@ body > div {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfa96', endColorstr='#00ffffff',GradientType=1 );
   /* IE6-8 */
 }
-/* line 151, master.scss */
+/* line 156, master.scss */
 #content_body h2 {
   font-size: 16px;
   font-size: 1.3rem;
 }
-/* line 156, master.scss */
+/* line 161, master.scss */
 #content_body .main_content h2 {
   font-size: 16px;
   font-size: 1.3rem;
 }
-/* line 162, master.scss */
+/* line 167, master.scss */
 #content_body h3 {
   font-size: 14px;
   font-size: 1.1rem;
 }
-/* line 166, master.scss */
+/* line 171, master.scss */
 #content_body h4 {
   font-size: 12px;
   font-size: 1rem;
 }
-/* line 170, master.scss */
+/* line 175, master.scss */
 #content_body h5 {
   font-size: 10px;
   font-size: .9rem;
 }
-/* line 174, master.scss */
+/* line 179, master.scss */
 #content_body h6 {
   font-size: 10px;
   font-size: .9rem;
 }
-/* line 178, master.scss */
+/* line 183, master.scss */
 #content_body p {
   margin: 0 0 1em;
   font-size: 1rem;
 }
-/* line 185, master.scss */
+/* line 190, master.scss */
 #content_body .left_sidebar_content {
   display: block;
   width: 200px;
   float: left;
 }
-/* line 191, master.scss */
+/* line 196, master.scss */
 #content_body .right_sidebar_content {
   display: block;
   width: 200px;
   float: right;
 }
-/* line 197, master.scss */
+/* line 202, master.scss */
 #content_body .main_content {
   display: block;
   float: left;
   width: 716px;
   padding: 0px 10px;
 }
-/* line 203, master.scss */
+/* line 208, master.scss */
 #content_body .right_content {
   display: block;
   width: 200px;
@@ -185,62 +191,62 @@ body > div {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 214, master.scss */
+/* line 219, master.scss */
 #content_body .ccm-core-commerce-add-to-cart-callout {
   color: #000;
   text-align: left;
 }
-/* line 217, master.scss */
+/* line 222, master.scss */
 #content_body .ccm-core-commerce-add-to-cart-callout td {
   text-align: left;
 }
-/* line 222, master.scss */
+/* line 227, master.scss */
 #content_body .ccm-core-commerce-add-to-cart td {
   padding: 10px;
   text-align: left;
 }
-/* line 229, master.scss */
+/* line 234, master.scss */
 #content_body .formBlockSurveyTable label {
   vertical-align: top;
 }
-/* line 233, master.scss */
+/* line 238, master.scss */
 #content_body .formBlockSurveyTable label, #content_body .formBlockSurveyTable .radioPair {
   font-size: 1.3rem;
   padding-top: 10px;
 }
-/* line 238, master.scss */
+/* line 243, master.scss */
 #content_body .formBlockSurveyTable input, #content_body .formBlockSurveyTable textarea {
   margin: 10px 0px;
 }
-/* line 246, master.scss */
+/* line 251, master.scss */
 #content_body form .question, #content_body form .checkboxList {
   vertical-align: top;
   margin: 10px 0px;
 }
 
-/* line 256, master.scss */
+/* line 261, master.scss */
 #footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
-/* line 261, master.scss */
+/* line 266, master.scss */
 #footer .footer_navigation {
   padding: 5px;
   padding-top: 20px;
   text-align: center;
 }
-/* line 265, master.scss */
+/* line 270, master.scss */
 #footer .footer_navigation a {
   text-decoration: none;
   font-size: 12px;
   font-size: .8rem;
   padding: 0px 7px;
 }
-/* line 271, master.scss */
+/* line 276, master.scss */
 #footer .footer_navigation a:hover {
   text-decoration: underline;
 }
-/* line 279, master.scss */
+/* line 284, master.scss */
 #footer .copyright {
   min-height: 30px;
   font-size: 12px;
@@ -250,7 +256,7 @@ body > div {
   font-size: .7rem;
   text-align: center;
 }
-/* line 289, master.scss */
+/* line 294, master.scss */
 #footer .godaddy_seal {
   width: 132px;
   height: 31px;
@@ -260,29 +266,29 @@ body > div {
   padding-top: 20px;
 }
 
-/* line 300, master.scss */
+/* line 305, master.scss */
 .clear, .clearfix {
   display: block;
   clear: both;
 }
 
 /* specific overrides */
-/* line 307, master.scss */
+/* line 312, master.scss */
 .nav li {
   list-style: none !important;
 }
-/* line 310, master.scss */
+/* line 315, master.scss */
 .nav li a {
   text-decoration: none;
 }
 
-/* line 316, master.scss */
+/* line 321, master.scss */
 #content_body .left_sidebar_content .nav {
   position: relative;
   left: -40px;
 }
 
-/* line 321, master.scss */
+/* line 326, master.scss */
 .pagetype_left_sidebar #content_body h1, .pagetype_left_sidebar #content_body h2 {
   left: 0px;
 }
