@@ -78,9 +78,10 @@ img {
 }
 
 
-body > div {
+body > div,  #header, #main_content, #footer {
   margin: 0px auto 0px auto;
   width: $width;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.85);
 }
 

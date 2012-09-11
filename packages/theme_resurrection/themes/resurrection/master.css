@@ -34,13 +34,14 @@ img {
 }
 
 /* line 81, master.scss */
-body > div {
+body > div, #header, #main_content, #footer {
   margin: 0px auto 0px auto;
   width: 996px;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* line 87, master.scss */
+/* line 88, master.scss */
 #header_hero {
   background: url(images/header.jpg) top left no-repeat;
   width: 996px;
@@ -48,7 +49,7 @@ body > div {
   display: block;
 }
 
-/* line 94, master.scss */
+/* line 95, master.scss */
 #header_hero:after {
   content: ".";
   display: block;
@@ -57,7 +58,7 @@ body > div {
   visibility: hidden;
 }
 
-/* line 98, master.scss */
+/* line 99, master.scss */
 #header_navigation {
   padding: 5px;
   text-align: center;
@@ -65,7 +66,7 @@ body > div {
   padding-bottom: 10px;
   background: #000;
 }
-/* line 104, master.scss */
+/* line 105, master.scss */
 #header_navigation a {
   font-size: 16px;
   font-size: 1rem;
@@ -74,12 +75,12 @@ body > div {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 112, master.scss */
+/* line 113, master.scss */
 #header_navigation a:hover {
   text-decoration: none;
 }
 
-/* line 120, master.scss */
+/* line 121, master.scss */
 #content_body {
   position: relative;
   top: 0px;
@@ -90,7 +91,7 @@ body > div {
   display: block;
   min-height: 800px;
 }
-/* line 132, master.scss */
+/* line 133, master.scss */
 #content_body h1, #content_body h2, #content_body h3, #content_body h4, #content_body h5, #content_body h6 {
   text-align: left !important;
   /* temp fix to override inline styles */
@@ -98,7 +99,7 @@ body > div {
   padding: 10px 0px 10px 0px;
   text-transform: uppercase;
 }
-/* line 141, master.scss */
+/* line 142, master.scss */
 #content_body h1, #content_body .main_content h2 {
   font-size: 20px;
   font-size: 1.5rem;
@@ -124,61 +125,61 @@ body > div {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfa96', endColorstr='#00ffffff',GradientType=1 );
   /* IE6-8 */
 }
-/* line 156, master.scss */
+/* line 157, master.scss */
 #content_body h2 {
   font-size: 16px;
   font-size: 1.3rem;
 }
-/* line 161, master.scss */
+/* line 162, master.scss */
 #content_body .main_content h2 {
   font-size: 16px;
   font-size: 1.3rem;
 }
-/* line 167, master.scss */
+/* line 168, master.scss */
 #content_body h3 {
   font-size: 14px;
   font-size: 1.1rem;
 }
-/* line 171, master.scss */
+/* line 172, master.scss */
 #content_body h4 {
   font-size: 12px;
   font-size: 1rem;
 }
-/* line 175, master.scss */
+/* line 176, master.scss */
 #content_body h5 {
   font-size: 10px;
   font-size: .9rem;
 }
-/* line 179, master.scss */
+/* line 180, master.scss */
 #content_body h6 {
   font-size: 10px;
   font-size: .9rem;
 }
-/* line 183, master.scss */
+/* line 184, master.scss */
 #content_body p {
   margin: 0 0 1em;
   font-size: 1rem;
 }
-/* line 190, master.scss */
+/* line 191, master.scss */
 #content_body .left_sidebar_content {
   display: block;
   width: 200px;
   float: left;
 }
-/* line 196, master.scss */
+/* line 197, master.scss */
 #content_body .right_sidebar_content {
   display: block;
   width: 200px;
   float: right;
 }
-/* line 202, master.scss */
+/* line 203, master.scss */
 #content_body .main_content {
   display: block;
   float: left;
   width: 716px;
   padding: 0px 10px;
 }
-/* line 208, master.scss */
+/* line 209, master.scss */
 #content_body .right_content {
   display: block;
   width: 200px;
@@ -191,62 +192,62 @@ body > div {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 219, master.scss */
+/* line 220, master.scss */
 #content_body .ccm-core-commerce-add-to-cart-callout {
   color: #000;
   text-align: left;
 }
-/* line 222, master.scss */
+/* line 223, master.scss */
 #content_body .ccm-core-commerce-add-to-cart-callout td {
   text-align: left;
 }
-/* line 227, master.scss */
+/* line 228, master.scss */
 #content_body .ccm-core-commerce-add-to-cart td {
   padding: 10px;
   text-align: left;
 }
-/* line 234, master.scss */
+/* line 235, master.scss */
 #content_body .formBlockSurveyTable label {
   vertical-align: top;
 }
-/* line 238, master.scss */
+/* line 239, master.scss */
 #content_body .formBlockSurveyTable label, #content_body .formBlockSurveyTable .radioPair {
   font-size: 1.3rem;
   padding-top: 10px;
 }
-/* line 243, master.scss */
+/* line 244, master.scss */
 #content_body .formBlockSurveyTable input, #content_body .formBlockSurveyTable textarea {
   margin: 10px 0px;
 }
-/* line 251, master.scss */
+/* line 252, master.scss */
 #content_body form .question, #content_body form .checkboxList {
   vertical-align: top;
   margin: 10px 0px;
 }
 
-/* line 261, master.scss */
+/* line 262, master.scss */
 #footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
-/* line 266, master.scss */
+/* line 267, master.scss */
 #footer .footer_navigation {
   padding: 5px;
   padding-top: 20px;
   text-align: center;
 }
-/* line 270, master.scss */
+/* line 271, master.scss */
 #footer .footer_navigation a {
   text-decoration: none;
   font-size: 12px;
   font-size: .8rem;
   padding: 0px 7px;
 }
-/* line 276, master.scss */
+/* line 277, master.scss */
 #footer .footer_navigation a:hover {
   text-decoration: underline;
 }
-/* line 284, master.scss */
+/* line 285, master.scss */
 #footer .copyright {
   min-height: 30px;
   font-size: 12px;
@@ -256,7 +257,7 @@ body > div {
   font-size: .7rem;
   text-align: center;
 }
-/* line 294, master.scss */
+/* line 295, master.scss */
 #footer .godaddy_seal {
   width: 132px;
   height: 31px;
@@ -266,29 +267,29 @@ body > div {
   padding-top: 20px;
 }
 
-/* line 305, master.scss */
+/* line 306, master.scss */
 .clear, .clearfix {
   display: block;
   clear: both;
 }
 
 /* specific overrides */
-/* line 312, master.scss */
+/* line 313, master.scss */
 .nav li {
   list-style: none !important;
 }
-/* line 315, master.scss */
+/* line 316, master.scss */
 .nav li a {
   text-decoration: none;
 }
 
-/* line 321, master.scss */
+/* line 322, master.scss */
 #content_body .left_sidebar_content .nav {
   position: relative;
   left: -40px;
 }
 
-/* line 326, master.scss */
+/* line 327, master.scss */
 .pagetype_left_sidebar #content_body h1, .pagetype_left_sidebar #content_body h2 {
   left: 0px;
 }
